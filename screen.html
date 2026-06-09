@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tap Race</title>
+        <link rel="stylesheet" href="css/screen.css">
+        <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.10.0.js"></script>
+        <script src="js/screen.js" defer></script>
+    </head>
+    <body>
+        <!-- LOBBY: title, goal display, player ready list -->
+        <div id="lobby-screen" class="screen">
+            <h1>Tap Race</h1>
+            <p id="lobby-status">Waiting for players...</p>
+            <div id="lobby-players"></div>
+        </div>
+
+        <!-- COUNTDOWN: just the big number -->
+        <div id="countdown-screen" class="screen">
+            <h1 id="countdown-number"></h1>
+        </div>
+
+        <!-- PLAYING: live scoreboard -->
+        <div id="playing-screen" class="screen">
+            <div id="playing-players"></div>
+        </div>
+
+        <!-- GAME_OVER: winner + final scores -->
+        <div id="gameover-screen" class="screen">
+            <h1 id="winner-text">Winner!</h1>
+            <div id="final-scores"></div>
+        </div>
+    </body>
+</html>

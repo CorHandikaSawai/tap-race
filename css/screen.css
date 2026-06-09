@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* width and height include padding and border - much easier for layout */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0f1e;
+    color: white;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.screen {
+    display: none; /* Hide all screens by default */
+    min-height: 100vh;
+}
+
+.screen.active {
+    display: flex; /* Show the active screen */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
