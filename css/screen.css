@@ -1,3 +1,13 @@
+:root {
+    --bg: #0a0f1e;          /* your deep navy (already set) */
+    --bg-panel: #131a30;    /* slightly lighter for cards/panels */
+    --neon-cyan: #00f0ff;   /* primary accent — titles, glows */
+    --neon-pink: #ff2d95;   /* energy / call-to-action */
+    --neon-lime: #aaff00;   /* "ready!" / success */
+    --neon-yellow: #ffd400; /* highlights / the master player */
+    --text-dim: #8a93b2;    /* muted text — "waiting..." */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,4 +35,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#lobby-screen h1 {
+    color: #fff;
+    font-size: 5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow:
+        0 0 10px var(--neon-cyan),
+        0 0 20px var(--neon-cyan),
+        0 0 40px var(--neon-cyan),
+        0 0 80px var(--neon-cyan);
 }
